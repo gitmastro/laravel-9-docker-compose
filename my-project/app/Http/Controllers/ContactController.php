@@ -83,9 +83,8 @@ class ContactController extends Controller
             return redirect()->route('contact')->with('error', 'Invalid delete action performed.');
 
         $contact =  Contacts::find($request->input('delete_id'));
-        $deleteContact = ($request->input('delete_id')) ? $contact->find($request->input('delete_id')) : null;
 
-        if (!$deleteContact)
+        if (!$contact)
             return redirect()->route('contact')->with('error',  'Contact #' . $request->input('delete_id') . ' not exists.');
 
         $contact->delete();
