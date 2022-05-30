@@ -109,7 +109,7 @@
                                     <form method="POST" action="{{ route('contact.edit', [$contact_list[$i]['id']]) }}">
                                         @csrf
                                         <input type="hidden" name="form_action" value="edit" />
-                                        <button type="submit" class="btn btn-link">Edit</button>
+                                        <button type="submit" class="btn btn-primary btn-sm">Edit</button>
                                     </form>
                                 </td>
                                 <td>
@@ -117,7 +117,7 @@
                                         @csrf
                                         <input type="hidden" name="delete_id" value="{{ $contact_list[$i]['id']}}" />
                                         <input type="hidden" name="form_action" value="delete" />
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                     </form>
                                 </td>
                                 </tr>
