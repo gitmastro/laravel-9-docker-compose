@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Contacts') }}</div>
 
                 <div class="card-body">
-                    @include('contacts.create')
+                    @include('contact.curd')
                 </div>
             </div>
         </div>
