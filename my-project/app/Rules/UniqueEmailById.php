@@ -65,6 +65,6 @@ class UniqueEmailById implements Rule, DataAwareRule
      */
     public function message()
     {
-        return 'The email :attribute used with diffrent contact id.';
+        return 'The :attribute used with diffrent contact id.';
     }
 }
