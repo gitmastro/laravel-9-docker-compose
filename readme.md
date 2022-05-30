@@ -1,4 +1,9 @@
-# Docker compose for laravel 9, mariadb & phpadmin
+# Docker compose for laravel 9, mariadb & phpadmin with sample contact CRUD
+
+## App bootup steps
+
+- `docker compose up`
+- Open `http://localhost:8000/` on browser
 
 # Executing commands in Laravel container
 
