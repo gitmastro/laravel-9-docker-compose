@@ -2,7 +2,18 @@
 
 ## App bootup steps
 
-- `docker compose up`
+- Cd to application root and Build local envoirnment
+
+```bash
+  docker-compose up
+```
+
+- Run migration script in another tab
+
+```bash
+  docker-compose exec myapp php artisan migrate
+```
+
 - Open `http://localhost:8000/` on browser
 
 # Executing commands in Laravel container
